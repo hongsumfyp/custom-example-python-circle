@@ -8,7 +8,8 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: rappdw/docker-java-python
+      - image: circleci/python:2.7.15-jessie
+      #- image: rappdw/docker-java-python
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -24,8 +25,9 @@ jobs:
           command: | 
             
             pip install --upgrade pip setuptools wheel 
-            #python2 -m venv venv
-            #. venv/bin/activate
+            python -m virtualenv flask
+            source flask/bin/activate
+            pip install flask
             pip install -r requirements.txt
             #bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
