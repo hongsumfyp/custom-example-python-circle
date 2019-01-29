@@ -29,6 +29,6 @@ jobs:
             #python2 -m venv venv
             #. venv/bin/activate
             apt-get install libtiff5-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
-            pip2 install -r requirements.txt
+            pip install -r requirements.txt
             #bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
