@@ -22,12 +22,12 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-            pip3 install --upgrade setuptools 
-            pip3 install --upgrade pip 
+            pip install --upgrade setuptools 
+            pip install --upgrade pip 
 
-            python3 -m venv venv
+            python -m venv venv
             . venv/bin/activate
             apt-get install libtiff5-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
-            pip3 install -r requirements.txt
+            pip install -r requirements.txt
             #bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
