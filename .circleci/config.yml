@@ -22,8 +22,8 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-            pip install --upgrade setuptools 
-            pip install --upgrade pip 
+            sudo pip install --upgrade setuptools 
+            sudo pip install --upgrade pip 
 
             python3 -m venv venv
             . venv/bin/activate
