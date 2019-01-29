@@ -23,8 +23,7 @@ jobs:
           name: install dependencies
           command: | 
             
-            pip install --upgrade setuptools 
-            pip install --upgrade pip 
+            pip install --upgrade pip setuptools wheel 
             pip install minepy
             python2 --version
             #python2 -m venv venv
