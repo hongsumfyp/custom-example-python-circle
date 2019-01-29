@@ -25,7 +25,7 @@ jobs:
             pip install --upgrade setuptools 
             pip install --upgrade pip 
 
-            python3 -m venv venv
+            python -m venv venv
             . venv/bin/activate
             apt-get install libtiff5-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
             pip install -r requirements.txt
