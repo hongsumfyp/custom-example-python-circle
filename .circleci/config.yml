@@ -24,11 +24,8 @@ jobs:
           command: | 
             
             pip install --upgrade pip setuptools wheel 
-            pip install minepy
-            python2 --version
             #python2 -m venv venv
             #. venv/bin/activate
-            apt-get install libtiff5-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
             pip install -r requirements.txt
             #bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
