@@ -22,10 +22,10 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-          python3 --version
+            
             pip install --upgrade setuptools 
             pip install --upgrade pip 
-
+            python3 --version
             python -m venv venv
             . venv/bin/activate
             apt-get install libtiff5-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
