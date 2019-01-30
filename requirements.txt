@@ -4,5 +4,5 @@ rsa==3.4
 requests==2.2.1
 feedparser==5.1.1
 pycrypto==2.4
-raven==6.3.0
+raven==5.16.0
 
