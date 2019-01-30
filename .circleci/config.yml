@@ -8,8 +8,8 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-       - image: korekontrol/ubuntu-java-python2
-      #- image: circleci/python:2.7.15-jessie
+      # - image: korekontrol/ubuntu-java-python2
+      - image: circleci/python:2.7.15-jessie
       #- image: rappdw/docker-java-python
       
       # Specify service dependencies here if necessary
@@ -24,13 +24,13 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-            apt-get update
-            apt-get install libcurl3 php5-curl
-            apt-get install curl -y
+            #apt-get update
+            #apt-get install libcurl3 php5-curl
+            #apt-get install curl -y
             pip install --upgrade pip setuptools wheel 
-            #python -m virtualenv flask
-            #source flask/bin/activate
-            #pip install flask
+            python -m virtualenv flask
+            source flask/bin/activate
+            pip install flask
             pip install -r requirements.txt
             #bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
