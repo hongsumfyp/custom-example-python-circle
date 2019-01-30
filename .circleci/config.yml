@@ -24,7 +24,7 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-         
+            apt-get install curl
             pip install --upgrade pip setuptools wheel 
             #python -m virtualenv flask
             #source flask/bin/activate
