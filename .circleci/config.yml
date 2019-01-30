@@ -24,8 +24,11 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-           apt install python-pip
-            
+          
+            sudo apt-get install software-properties-common
+            sudo apt-add-repository universe
+            sudo apt-get update
+            sudo apt-get install python-pip
             pip install --upgrade pip setuptools wheel 
             python -m virtualenv flask
             source flask/bin/activate
