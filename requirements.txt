@@ -9,7 +9,7 @@ traces==0.4.2
 dyNET==2.1
 CaChannel==3.1.2
 tatsu==4.3.0
-dicdiffer==0.7.1
+dictdiffer==0.7.1
 numina==0.19
 flatson==0.1.0
 morph==0.1.4
