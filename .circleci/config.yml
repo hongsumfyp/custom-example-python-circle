@@ -24,6 +24,7 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
+          apt-get install -y software-properties-common
             add-apt-repository ppa:webupd8team/java
             apt update -y
             apt install oracle-java8-installer -y
