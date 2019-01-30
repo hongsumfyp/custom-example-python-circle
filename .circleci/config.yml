@@ -27,7 +27,7 @@ jobs:
             #apt-get update
             #apt-get install libcurl3 php5-curl
             #apt-get install curl -y
-            pip install --upgrade pip setuptools wheel 
+            #pip install --upgrade pip setuptools wheel 
             python -m virtualenv flask
             source flask/bin/activate
             pip install flask
