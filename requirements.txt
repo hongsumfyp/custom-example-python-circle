@@ -6,6 +6,4 @@ feedparser==5.1.1
 pycrypto==2.4.1
 
 sentry==5.4.2
-sentry==8.1.2
-twilio==6.1.2
 
