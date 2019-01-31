@@ -6,7 +6,6 @@ feedparser==5.1.1
 pycrypto==2.4.1
 
 beaker==1.6.4
-sentry==7.0.0
 django-discord-bind==0.2.0
 pyorient==1.4.7
 Euphorie==6.1
