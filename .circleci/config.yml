@@ -22,6 +22,6 @@ jobs:
       
       #- run: bash <(curl -s https://copilot.blackducksoftware.com/ci/circle/scripts/upload)
    #   - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
-   test:
+
       post:
         - bash <(curl -s https://copilot.blackducksoftware.com/ci/circle/scripts/upload)
