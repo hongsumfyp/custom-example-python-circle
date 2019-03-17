@@ -25,6 +25,8 @@ jobs:
               pip install --upgrade pip
               pip install pipenv
               pipenv install
+              pipenv lock
+              pip install -r requirements.txt
       - run: bash <(curl -s https://copilot.blackducksoftware.com/ci/circle/scripts/upload)
    #   - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
 
