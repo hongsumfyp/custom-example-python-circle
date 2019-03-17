@@ -24,6 +24,7 @@ jobs:
             command: |
               pip install --upgrade pip
               pip install pipenv
+              pipenv shell
               pipenv install
               pipenv lock
               pip install -r requirements.txt
